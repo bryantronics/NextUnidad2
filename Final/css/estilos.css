@@ -1,0 +1,254 @@
+body{
+    font-family: 'Dancing Script', cursive;
+    background-color:  #02010a;
+    animation: animacionentrada 1s;
+}
+@keyframes animacionentrada{
+    0%{margin-top: 150%;}
+    50%{margin-top: -5%;
+    100%{margin-top: 0%;}
+    }
+}
+/*low res*/
+@media (min-width:500px){
+.contenido img{
+    margin: 2%;
+    width: 95%;
+    }
+.contenedor img{
+        width: 100%;
+    }
+.contenedor>.imagen2-webkit{
+    width: 95%;
+    margin: 2%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    box-shadow: 2px 2px #02010a;
+    border:2px;
+    }
+.contenedor>.imagen2-moz{
+    width: 95%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    box-shadow: 2px 2px #02010a;
+    border:2px;
+    }
+.contenedor>.imagen3-webkit{
+    width: 95%;
+    margin: 2%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    float:right;
+	box-shadow: 2px 2px  #02010a;
+    }   
+.contenedor>.imagen3-moz{
+    width: 95%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    float:right;
+	box-shadow: 2px 2px  #02010a;
+    }
+.contenedor{
+    display: flex;
+    flex-direction:column;
+    background-color: #d5c75f;
+    border: 1px;
+    }
+    
+.pie {
+    background-color:  #C6d5c5;
+    align-content: left;
+    color: white;
+    text-shadow: 2px 2px #02010a;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;    
+}
+.menu{
+    text-align: center;
+}
+.galeria{
+    width: 98%;
+    display: flex;
+    flex-basis: 1 5 50%;
+    flex-flow: row wrap;
+}
+div [id*="imagen"] img{
+        width: 98%;
+    }
+#imagen1 img{
+    filter: blur(10px);
+    width: 98%;
+    padding-left: 2%;
+    }
+#imagen2 img{    
+    filter: grayscale(100%);
+    width: 98%;
+    padding-left: 2%;
+    }
+#imagen3 img{
+    filter: sepia(90%);
+    width: 98%;
+    padding-left: 2%;
+    }
+#imagen4 img{
+    filter: grayscale(100%);
+    width: 98%;
+    padding-left: 2%;
+    }
+#imagen5 img{
+    width: 98%;
+    padding-left: 2%;
+    }
+#imagen6 img{
+    filter: grayscale(100%);
+    width: 98%;
+    padding-left: 2%;
+    }
+}
+/*highres*/
+@media (min-width:900px)
+{
+.contenido img{
+    margin:2%;
+        width: 95%;
+    }
+.contenedor img{
+        width: 100%;
+    }
+.contenedor>.imagen2{
+    width: 45%;
+    margin: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    box-shadow: 2px 2px #02010a;
+    border:2px;
+    }
+
+.contenedor>.imagen3{
+    width: 45%;
+    margin: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    box-shadow: 2px 2px  #02010a;
+    }
+.contenedor{
+    display: flex;
+    flex-direction:row;
+    background-color: #d5c75f;
+    border: 1px;
+}
+.menu{
+    float:right;   
+}
+
+.pie {
+    background-color:  #C6d5c5;
+    align-content: left;
+    color: white;
+    text-shadow: 2px 2px #02010a;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: row; 
+}   
+.galeria{
+    width: 95%;
+    align-content: center;
+}
+#imagen1 img{
+    width: 60%;
+    filter: blur(10px);
+    padding-left: 30%;
+    }
+#imagen2 img{
+    filter: grayscale(100%);
+    width: 60%;
+    padding-left: 20%;
+    }
+#imagen3 img{
+    filter: sepia(90%);
+    width: 60%;
+    padding-left: 20%;
+    }
+#imagen4 img{
+    filter: grayscale(100%);
+    width: 60%;
+    padding-left: 30%;
+    }
+#imagen5 img{
+    width: 60%;
+    padding-left: 20%;
+    }
+#imagen6 img{
+    filter: grayscale(100%);
+    width: 60%;
+    padding-left: 20%;
+    }
+.sup{
+    display: flex;
+    flex-direction:row;
+    }
+.inf{
+    display: flex;
+    flex-direction:row;
+    }
+}
+.cabecera {
+    background-color: #5b7989;
+    align-content: left;
+    color: white;
+    text-shadow: 2px 2px #02010a;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display:block;
+    height: auto;
+}
+a:visited{
+ text-decoration: none   
+}
+.menu a{
+    font-style: normal;
+    color:white;
+    overflow: auto;
+}
+.contenido{
+    background-color: #82c3a6;
+}
+.contenedor.imagen1{
+    width: 95%;
+    margin: 2%;
+	box-shadow: 2px 2px  #02010a;
+}
+.contenedor>.imagen2:hover{
+   animation: animacion1 1s;
+}
+
+@keyframes animacion1{
+    0%{transform: rotate(0deg);}
+    50%{transform:rotate(10deg);
+    100%{transform: rotate(-10deg);}
+    }
+}
+img #central{
+    border: 2px;
+    background-color: #82c3a6;
+	box-shadow: 4px 8px;
+}
+.galeria{
+    width: 100%;
+    background-color: #d5c75f;
+}
+.contenedor>.imagen3:hover{
+    animation: animacion2 1s;
+    
+}
+
+@keyframes animacion2{
+    0%{transform:transla  te(0px, 0px);}
+    50%{transform: translate(20px,-5px);
+    }
+    100%{transform:translate(0px, 0px);}
+}
+
